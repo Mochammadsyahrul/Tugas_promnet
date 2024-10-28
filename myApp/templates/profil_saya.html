@@ -1,0 +1,29 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profil Diri</title>
+    <link rel="stylesheet" href="{% static 'CV2.css' %}">
+</head>
+<body>
+    <div class="container">
+        <!-- Page Utama: Profil Umum -->
+        <div class="page" id="Profil umum.html">
+            <h1>BIODATA</h1>
+            <img src="{% static 'profil_saya.JPG' %}" alt="Mochammad Syahrul Ramadhan" width="300px"class="profile-picture">
+            <h1>PROFIL</h1>
+            <p>Mochammad Syahrul Ramadhan</li></p>
+            <p>Kuningan, 21 Oktober 2004</li></p>
+            <p>Desa Cidahu,Kecamatan Cidahu,Kabupaten Kuningan</p>
+            <p>081221077171</li></p>
+            <p>syahrulsggr@gmail.com</li></p>    
+            <nav>
+                <button ><a href="{% url 'index' %}">Kembali ke Halaman Utama </a></button> 
+        </div>
+            </nav>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,32 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profil Diri</title>
+    <link rel="stylesheet" href="{% static 'CV2.css' %}">
+</head>
+<body>
+    <div class="container">
+        <!-- Page Utama: Profil Umum -->
+        <div class="page" id="Profil umum.html">
+            <h1>HALAMAN UTAMA</h1>
+            <img src="{% static 'arul.JPG' %}" alt="Mochammad Syahrul Ramadhan" width="300px"class="profile-picture">
+            <p>Selamat Datang di Biodata Saya</p>
+            <p>Ini adalah sebuah web yang menampilkan biodata Saya, mulai dari Profil,</li></p> 
+            <p>Pendidikan, Pengalaman, hingga Media Sosial</p>
+            <br><br>
+            <p>Silahkan pilih apa yang ingin anda lihat tentang saya : </p>
+            <nav>
+                <ul>
+                    <button class="tombol"><li><a href="{% url 'profil_saya' %}">Profil</a></li></button>&nbsp;&nbsp;
+                    <button class="tombol"><li><a href="{% url 'pendidikan' %}">Pendidikan</a></li></button>&nbsp;&nbsp;
+                    <button class="tombol"><li><a href="{% url 'pengalaman' %}">Pengalaman</a></li></button>&nbsp;&nbsp;
+                    <button class="tombol"><li><a href="{% url 'sosmed' %}">Sosial Media</a></li></button>&nbsp;&nbsp;
+                </ul>
+            </nav>
+        </div>
+    </div>
+</body>
+</html>

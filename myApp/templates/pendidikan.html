@@ -1,0 +1,25 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pendidikan</title>
+    <link rel="stylesheet" href="{% static 'CV2.css' %}">
+</head>
+<body>
+    <div class="container">
+        <!-- Page Pendidikan -->
+        <div class="page" id="pendidikan">
+            <h1>PENDIDIKAN</h1>
+            <img src="{% static 'syahrul.JPG' %}" alt="Mochammad Syahrul Ramadhan" width="300px"class="profile-picture">
+            <p>SDN 1 Cidahu (2011 - 2017)</p>
+            <p>SMPN 1 Cidahu (2017 - 2020)</p>
+            <p>SMAN 1 Ciawigebang (2020 - 2023)</p>
+            <p>Universitas Pendidikan Indonesia (2023 - Sekarang)</p>
+
+            <button ><a href="{% url 'index' %}">Kembali ke Halaman Utama </a></button> 
+        </div>
+    </div>
+</body>
+</html>

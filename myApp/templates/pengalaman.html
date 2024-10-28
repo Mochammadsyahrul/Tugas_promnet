@@ -1,0 +1,35 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pengalaman</title>
+    <link rel="stylesheet" href="{% static 'CV2.css' %}">
+</head>
+<body>
+    <div class="container">
+        <div class="page" id="pengalaman">
+            <h1>PENGALAMAN</h1>
+            <img src="{% static 'pengalaman.JPG' %}" alt="Mochammad Syahrul Ramadhan" width="300px"class="profile-picture">
+            <h2>Pengalaman Pribadi</h2>
+            <p>Juara 1 Story telling Bahasa Inggris Antar SD Tingkat Kabupaten (2011)</p>
+            <p>Juara 1 OSN PKN Antar SD Tingkat Kecamatan(2015)</p>
+            <p>Juara 1 O2SN Badminton Antar SD Tingkat Kabupaten (2015)</p>
+            <p>Juara 1 KejurKab Badminton (2016)</p>
+            <p>Juara 1 Kejurkab 2 Badminton (2016)</p>
+            <p>Juara 3 O2SN Badminton Antar SMP Tingkat Kabupaten (2017)</p>
+            <p>Juara Juara 2 Wali Kota Cirebon Badminton (2017)</p>
+            <p>Juara 1 Cirebon Fun Match OPEN Badminton (2023)</p>
+            <p>Juara 1 COSION KEMAKOM Badminton (2023)</p>
+           
+            <h2>Pengalaman Organisasi</h2>
+            <p>Wakil Ketua OSIS SMPN 1 Cidahu (2017)</p>
+            <p>Ketua Eskul Badminton SMAN 1 Ciawigebang (2021)</p>
+            <p>Ketua UKK Badminton Kemakom (2023 - Sekarang)</p>
+
+            <button ><a href="{% url 'index' %}">Kembali ke Halaman Utama </a></button> 
+        </div>
+    </div>
+</body>
+</html>

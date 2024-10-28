@@ -1,0 +1,129 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color:black;
+    color: #333;
+    line-height: 1.6;
+    
+}
+
+.container {
+    max-width: 800px;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: #1a01ff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+    font-size: 2em;
+    color: white;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+h2 {
+    font-size: 1.5em;
+    color: white;
+    margin-top: 20px;
+    border-bottom: 2px solid #ddd;
+    padding-bottom: 5px;
+}
+
+p {
+    margin-bottom: 10px;
+    color: white;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    margin: 20px 0;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    padding: 8px 12px;
+    border: 1px solid transparent;
+    border-radius: 4px;
+    transition: all 0.3s ease;
+}
+
+nav ul li a:hover {
+    color: #0433ccf3;
+    background-color: rgb(255, 255, 255);
+    border-color: rgb(14, 47, 233);
+}
+
+.page {
+    margin-top: 20px;
+    text-align: center;
+}
+
+button {
+    margin-top: 20px;
+    padding: 10px 20px;
+    color:white;
+    background-color:rgb(7, 213, 240);
+    border: none;
+    border-radius: 4px;
+    font-size: 1em;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color:rgb(4, 202, 236);
+    color: #0433ccf3;
+}
+
+.tombol{
+    color:black;
+    background-color: rgb(0, 177, 247);
+}
+
+a {
+    color: #007bff;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+@media (max-width: 600px) {
+    nav ul {
+        flex-direction: column;
+    }
+
+    nav ul li {
+        margin: 10px 0;
+    }
+
+    .container {
+        padding: 15px;
+    }
+}
+.profile-picture {
+    width: 300px; /* Ukuran lebar foto, sesuaikan sesuai kebutuhan */
+    height: 300px; /* Tinggi yang sama untuk menjaga bentuk bulat */
+    border-radius: 50%; /* Membuat bentuk lingkaran */
+    object-fit: cover; /* Memastikan gambar terpusat */
+    border: 3px solid #ddd; /* Opsional: border tipis di sekeliling gambar */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Opsional: bayangan halus */
+    margin: 20px auto; /* Menjaga gambar tetap di tengah */
+    display: block;
+}

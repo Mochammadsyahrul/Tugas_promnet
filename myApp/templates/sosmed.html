@@ -1,0 +1,24 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sosial Media</title>
+    <link rel="stylesheet" href="{% static 'CV2.css' %}">
+</head>
+<body>
+    <div class="container">
+        <!-- Page Sosial Media -->
+        <div class="page" id="sosial-media">
+            <h1>SOSIAL MEDIA</h1>
+            <img src="{% static 'Sosial media.JPG' %}" alt="Mochammad Syahrul Ramadhan" width="300px"class="profile-picture">
+            <p>WhatsApp: 081221077171</p>
+            <p>Facebook : Arul Ramadhan</p>
+            <p>Instagram: <a href="https://www.instagram.com/mochammad_s_r">@mochammad_s_r</a></p>
+
+            <button ><a href="{% url 'index' %}">Kembali ke Halaman Utama </a></button> 
+        </div>
+    </div>
+</body>
+</html>
